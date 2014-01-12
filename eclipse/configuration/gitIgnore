@@ -1,0 +1,7 @@
+#Ignorer les .classpath, .project,.settings
+.classpath
+.project
+.gitignore
+.settings/
+.idea/
+target/
