@@ -1,0 +1,29 @@
+BatterySave
+
+Scope:
+Afficher l'état de la batterie (pourcentage utilisé, temps restant).
+Afficher les applications les plus gourmande.
+Proposition de différent mode économique dont un ou plusieurs personnalisé.
+Optimiser sa batterie avec des règles de gestions.
+Afficher un widget avec l'état de la batterie et le mode activé.
+
+Règles:
+Avertir par une notification lorsqu'il reste le pourcentage défini par l'utilisateur.
+Passer en mode économique
+Définir le mode économique.
+Définir des horaires pour passer en mode économique.
+Enregistrement de plusieurs mode économique.
+
+le mode économique:
+bluetooth éteint
+luminosité défini
+wifi off
+3G off
+mode silencieux
+applications interdit
+
+
+
+
+
+
