@@ -1,5 +1,5 @@
 BatterySave
-
+--------------
 Scope:
 Afficher l'état de la batterie (pourcentage utilisé, temps restant).
 Afficher les applications les plus gourmande.
@@ -25,6 +25,22 @@ Durée mise en veille.
 Le gestionnaire de tâche:
 Fermer toute les applications.
 Fermer une ou plusieurs applications.
+
+
+Architecture:
+--------------
+Architure modulaire (client, app, core)
+
+Client (StateLess):
+Afficher toutes les données provenant de la couche app.
+
+App (Controller):
+Chaque module correspond à une fonctionnalité de l'application. Il récupère
+les données provenant de la partie core, les manipules et les transmet à la couche.
+client.
+
+Core (Object immuable):
+Partie Model, recupère les données.
 
 
 
