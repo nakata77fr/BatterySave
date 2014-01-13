@@ -8,18 +8,25 @@ Afficher un widget avec l'état de la batterie et le mode activé.
 
 Règles:
 Avertir par une notification lorsqu'il reste le pourcentage défini par l'utilisateur.
-Passer en mode économique
+Passer en mode économique.
 Définir le mode économique.
 Définir des horaires pour passer en mode économique.
 Enregistrement de plusieurs mode économique.
 
 le mode économique:
-bluetooth éteint
-luminosité défini
-wifi off
-3G off
-mode silencieux
-applications interdit
+Bluetooth éteint.
+Luminosité défini.
+Wifi on off.
+3G on off.
+Mode silencieux on off.
+Applications interdit (petit gestionnaire de tâche).
+Durée mise en veille.
+
+Le gestionnaire de tâche:
+Fermer toute les applications.
+Fermer une ou plusieurs applications.
+
+
 
 
 
