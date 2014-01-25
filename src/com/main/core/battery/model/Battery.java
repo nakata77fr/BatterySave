@@ -1,6 +1,5 @@
 package com.main.core.battery.model;
 
-
 public class Battery {
 
 	private int status;

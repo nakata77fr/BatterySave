@@ -34,12 +34,12 @@ public class MainActivity extends Activity {
 		EditText battery_is_charging_by_plug = (EditText) findViewById(R.id.battery_is_charging_by_plug);
 		EditText battery_is_charging_by_usb = (EditText) findViewById(R.id.battery_is_charging_by_usb);
 		EditText battery_is_charging_by_ac = (EditText) findViewById(R.id.battery_is_charging_by_ac);
-		battery_life.setText("life:"+String.valueOf(battery.getLife()));
-		battery_status.setText("status"+String.valueOf(battery.getStatus()));
-		battery_is_charging.setText("charging:"+String.valueOf(battery.isCharging()));
-		battery_is_charging_by_plug.setText("charging on plug:"+String.valueOf(battery.getChargePlug()));
-		battery_is_charging_by_usb.setText(String.valueOf("charging on usb:"+battery.isUsbCharge()));
-		battery_is_charging_by_ac.setText(String.valueOf("charging on ac:"+battery.isAcCharge()));
+		battery_life.setText("life:" + String.valueOf(battery.getLife()));
+		battery_status.setText("status" + String.valueOf(battery.getStatus()));
+		battery_is_charging.setText("charging:" + String.valueOf(battery.isCharging()));
+		battery_is_charging_by_plug.setText("charging on plug:" + String.valueOf(battery.getChargePlug()));
+		battery_is_charging_by_usb.setText(String.valueOf("charging on usb:" + battery.isUsbCharge()));
+		battery_is_charging_by_ac.setText(String.valueOf("charging on ac:" + battery.isAcCharge()));
 	}
 
 	private Battery getBatteryInfo() {
