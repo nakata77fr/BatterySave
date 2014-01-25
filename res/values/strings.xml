@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BatterySave</string>
+	<string name="app_name">BatterySave</string>
+    <string name="battery_life">battery_life</string>
+	<string name="battery_status">battery_status</string>
+	<string name="battery_is_charging">battery_is_charging</string>
+	<string name="battery_is_charging_by_plug">battery_is_charging_by_plug</string>
+	<string name="battery_is_charging_by_usb">battery_is_charging_by_usb</string>
+	<string name="battery_is_charging_by_ac">battery_is_charging_by_ac</string>
 </resources>

@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-        >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+			  android:orientation="vertical"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent">
+
+	<EditText android:id="@+id/battery_life"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_life"/>
+
+	<EditText android:id="@+id/battery_status"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_status" />
+
+	<EditText android:id="@+id/battery_is_charging"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_is_charging" />
+
+	<EditText android:id="@+id/battery_is_charging_by_plug"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_is_charging_by_plug" />
+
+	<EditText android:id="@+id/battery_is_charging_by_usb"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_is_charging_by_usb" />
+
+	<EditText android:id="@+id/battery_is_charging_by_ac"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:hint="@string/battery_is_charging_by_ac" />
+
 </LinearLayout>
 
