@@ -12,27 +12,47 @@
 	<EditText android:id="@+id/battery_status"
 			  android:layout_width="wrap_content"
 			  android:layout_height="wrap_content"
-			  android:hint="@string/battery_status" />
+			  android:hint="@string/battery_status"/>
 
 	<EditText android:id="@+id/battery_is_charging"
 			  android:layout_width="wrap_content"
 			  android:layout_height="wrap_content"
-			  android:hint="@string/battery_is_charging" />
+			  android:hint="@string/battery_is_charging"/>
 
 	<EditText android:id="@+id/battery_is_charging_by_plug"
 			  android:layout_width="wrap_content"
 			  android:layout_height="wrap_content"
-			  android:hint="@string/battery_is_charging_by_plug" />
+			  android:hint="@string/battery_is_charging_by_plug"/>
 
 	<EditText android:id="@+id/battery_is_charging_by_usb"
 			  android:layout_width="wrap_content"
 			  android:layout_height="wrap_content"
-			  android:hint="@string/battery_is_charging_by_usb" />
+			  android:hint="@string/battery_is_charging_by_usb"/>
 
 	<EditText android:id="@+id/battery_is_charging_by_ac"
 			  android:layout_width="wrap_content"
 			  android:layout_height="wrap_content"
-			  android:hint="@string/battery_is_charging_by_ac" />
+			  android:hint="@string/battery_is_charging_by_ac"/>
+
+	<SeekBar
+			android:id="@+id/backlightcontrol"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10px"
+			android:max="100"
+			android:progress="50"/>
+
+	<TextView
+			android:id="@+id/backlightsetting"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="0.50"/>
+
+	<Button
+			android:id="@+id/updatesystemsetting"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Update Settings.System.SCREEN_BRIGHTNESS"/>
 
 </LinearLayout>
 

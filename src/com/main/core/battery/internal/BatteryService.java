@@ -10,8 +10,7 @@ import com.main.core.battery.model.Battery;
 
 public class BatteryService implements IBatteryService {
 
-	@Override
-	public Battery getBatteryInfo(Context context, Intent intent) {
+	public Battery getBatteryInfo(Context context) {
 		IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
 		Intent batteryStatus = context.registerReceiver(null, ifilter);
 
