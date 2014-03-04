@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.SeekBar;
-import android.widget.TextView;
+import android.widget.*;
 
 import com.main.R;
 import com.main.core.battery.IBatteryService;
@@ -15,12 +12,16 @@ import com.main.core.battery.internal.BatteryService;
 import com.main.core.battery.model.Battery;
 import com.main.core.brightness.IBrightnessService;
 import com.main.core.brightness.internal.BrightnessService;
+import com.main.core.wifi.IWifiService;
+import com.main.core.wifi.internal.WifiService;
 
 public class MainActivity extends Activity {
 
 	private IBatteryService batteryService;
 
 	private IBrightnessService brightnessService;
+
+	private IWifiService wifiService;
 
 	/**
 	 * Called when the activity is fi!rst created.
@@ -31,7 +32,17 @@ public class MainActivity extends Activity {
 		handledBatteryState();
 		handleBrightnessByButton();
 		handleBrightnessBySeekBar();
+		handleWifiBySwitch();
+	}
 
+	private void handleWifiBySwitch() {
+		Switch toggle = (Switch) findViewById(R.id.wifi_switch);
+		toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				wifiService = new WifiService();
+				wifiService.putWifi(isChecked, getApplicationContext());
+			}
+		});
 	}
 
 	private void handledBatteryState() {
