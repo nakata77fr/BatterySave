@@ -52,7 +52,7 @@
 			android:id="@+id/updatesystemsetting"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:text="Update Settings.System.SCREEN_BRIGHTNESS"/>
+			android:text="BRIGHTNESS"/>
 
 	<Switch
 			android:id="@+id/wifi_switch"
@@ -63,6 +63,19 @@
 			android:background="@android:color/background_dark"
 			android:checked="false"
 			android:text="Wi-Fi Settings"
+			android:textColor="@android:color/white"
+			android:textOff="OFF"
+			android:textOn="ON"/>
+
+	<Switch
+			android:id="@+id/bluetoothSwitch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:background="@android:color/background_dark"
+			android:checked="false"
+			android:text="Bluetooth Settings"
 			android:textColor="@android:color/white"
 			android:textOff="OFF"
 			android:textOn="ON"/>

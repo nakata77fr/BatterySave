@@ -10,6 +10,8 @@ import com.main.R;
 import com.main.core.battery.IBatteryService;
 import com.main.core.battery.internal.BatteryService;
 import com.main.core.battery.model.Battery;
+import com.main.core.bluetooth.IBluetoothService;
+import com.main.core.bluetooth.internal.BluetoothService;
 import com.main.core.brightness.IBrightnessService;
 import com.main.core.brightness.internal.BrightnessService;
 import com.main.core.wifi.IWifiService;
@@ -23,6 +25,8 @@ public class MainActivity extends Activity {
 
 	private IWifiService wifiService;
 
+	private IBluetoothService bluetoothService;
+
 	/**
 	 * Called when the activity is fi!rst created.
 	 */
@@ -33,6 +37,17 @@ public class MainActivity extends Activity {
 		handleBrightnessByButton();
 		handleBrightnessBySeekBar();
 		handleWifiBySwitch();
+		handleBluetoothByBtn();
+	}
+
+	private void handleBluetoothByBtn() {
+		Switch bluetoothSwitch = (Switch) findViewById(R.id.bluetoothSwitch);
+		bluetoothSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				bluetoothService = new BluetoothService();
+				bluetoothService.setBluetoothState(isChecked);
+			}
+		});
 	}
 
 	private void handleWifiBySwitch() {
