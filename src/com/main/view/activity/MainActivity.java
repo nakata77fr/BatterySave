@@ -14,6 +14,8 @@ import com.main.core.bluetooth.IBluetoothService;
 import com.main.core.bluetooth.internal.BluetoothService;
 import com.main.core.brightness.IBrightnessService;
 import com.main.core.brightness.internal.BrightnessService;
+import com.main.core.localisation.ILocalisationService;
+import com.main.core.localisation.internal.LocalisationService;
 import com.main.core.wifi.IWifiService;
 import com.main.core.wifi.internal.WifiService;
 
@@ -27,6 +29,8 @@ public class MainActivity extends Activity {
 
 	private IBluetoothService bluetoothService;
 
+	private ILocalisationService localisationService;
+
 	/**
 	 * Called when the activity is fi!rst created.
 	 */
@@ -38,6 +42,18 @@ public class MainActivity extends Activity {
 		handleBrightnessBySeekBar();
 		handleWifiBySwitch();
 		handleBluetoothByBtn();
+		handleGpsBySwtich();
+
+	}
+
+	private void handleGpsBySwtich() {
+		Switch gpsSwitch = (Switch) findViewById(R.id.gpsSwitch);
+		gpsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				localisationService = new LocalisationService();
+				localisationService.startLocalisation(getApplicationContext(), isChecked);
+			}
+		});
 	}
 
 	private void handleBluetoothByBtn() {
