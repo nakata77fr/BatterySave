@@ -80,5 +80,18 @@
 			android:textOff="OFF"
 			android:textOn="ON"/>
 
+	<Switch
+			android:id="@+id/gpsSwitch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:background="@android:color/background_dark"
+			android:checked="false"
+			android:text="GPS Settings"
+			android:textColor="@android:color/white"
+			android:textOff="OFF"
+			android:textOn="ON"/>
+
 </LinearLayout>
 
